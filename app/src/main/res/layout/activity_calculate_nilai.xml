@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.agung.helloworld24.CalculateNilaiActivity">
+    <!--UTS-->
+    <TextView
+        android:id="@+id/nilai_uts_teori_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai UTS Teori"/>
+    <EditText
+        android:layout_below="@+id/nilai_uts_teori_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_uts_teori_text"/>
+    <TextView
+        android:id="@+id/nilai_uts_praktek_label"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai UTS Praktek"/>
+    <EditText
+        android:layout_below="@+id/nilai_uts_praktek_label"
+        android:layout_alignLeft="@+id/nilai_uts_praktek_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_uts_praktek_text"/>
+    <!--UAS-->
+    <TextView
+        android:id="@+id/nilai_uas_teori_label"
+        android:layout_below="@id/nilai_uas_teori_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai UAS Teori"/>
+    <EditText
+        android:layout_alignLeft="@id/nilai_uas_teori_label"
+        android:layout_below="@+id/nilai_uas_teori_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_uas_teori_text"/>
+    <TextView
+        android:id="@+id/nilai_uas_praktek_label"
+        android:layout_below="@id/nilai_uts_praktek_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai UAS Praktek"/>
+    <EditText
+        android:layout_below="@+id/nilai_uas_praktek_label"
+        android:layout_alignLeft="@+id/nilai_uts_praktek_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_uas_praktek_text"/>
+    <!--TUGAS-->
+    <TextView
+        android:id="@+id/nilai_tugas_teori_label"
+        android:layout_below="@id/nilai_uas_teori_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai TUGAS Teori"/>
+    <EditText
+        android:layout_alignLeft="@id/nilai_tugas_teori_label"
+        android:layout_below="@+id/nilai_tugas_teori_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_tugas_teori_text"/>
+    <TextView
+        android:id="@+id/nilai_tugas_praktek_label"
+        android:layout_below="@id/nilai_uas_praktek_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai TUGAS Praktek"/>
+    <EditText
+        android:layout_below="@+id/nilai_tugas_praktek_label"
+        android:layout_alignLeft="@+id/nilai_tugas_praktek_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_tugas_praktek_text"/>
+    <!--Nilai Akhir-->
+    <TextView
+        android:id="@+id/nilai_akhir_label"
+        android:layout_below="@id/nilai_tugas_teori_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai Nilai Akhir"/>
+    <EditText
+        android:layout_alignLeft="@id/nilai_akhir_label"
+        android:layout_below="@+id/nilai_akhir_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai_akhir_text"
+        android:inputType="none"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nilai_akhir_text"
+        android:text="Hitung"
+        android:id="@+id/hitung_button"/>
+
+
+</RelativeLayout>
